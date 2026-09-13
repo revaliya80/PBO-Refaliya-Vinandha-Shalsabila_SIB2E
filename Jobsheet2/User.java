@@ -12,10 +12,11 @@ public class User {
         System.out.println("Password: " + password);
         System.out.println("Nama: " + nama);
     }
-
-    public User(String username, String email) {
+    
+    public User(String username, String email, String password, String nama) {
             this.username = username;
             this.email = email;
             this.password = "polinema123";
+            
         }
 }
