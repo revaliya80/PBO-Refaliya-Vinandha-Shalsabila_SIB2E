@@ -4,7 +4,7 @@ public class MotorDemo {
     public static void main(String[] args) {
         Motor motor1 = new Motor();
         motor1.setPlatNomor("B 0838 XZ");
-        motor1.setKecepatan(50);
+        motor1.setKecepatan(120);
         motor1.displayInfo();
 
         Motor motor2 = new Motor();
