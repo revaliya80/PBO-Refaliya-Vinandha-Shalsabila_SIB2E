@@ -13,32 +13,27 @@ public class Motor {
     }
 
     public String getPlatNomor() {
-        return this.platNomor;
+        return platNomor;
     }
 
-    public void setPlatNomor(String platNomor) {
+    public void setPlatNomor (String platNomor) {
         this.platNomor = platNomor;
     }
 
-    // Getter and Setter for statusMesin
-    public boolean StatusMesin() {
-        return this.statusMesin;
+    public boolean getStatusMesin() {
+        return statusMesin;
     }
 
-    public void setStatusMesin(boolean statusMesin) {
+    public void setStatusMesin(boolean statusMesin){
         this.statusMesin = statusMesin;
     }
 
-    // Getter and Setter for kecepatan
-    public int getKecepatan() {
-        return this.kecepatan;
+    public int getKecepatan(){
+        return kecepatan;
     }
 
-    public void setKecepatan(int kecepatan) {
-        if (!this.statusMesin && kecepatan > 0) {
-            System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
-        } else {
-            this.kecepatan = kecepatan;
-        }
+    public void setKecepatan(int kecepatan){
+        this.kecepatan = kecepatan;
     }
+
 }
