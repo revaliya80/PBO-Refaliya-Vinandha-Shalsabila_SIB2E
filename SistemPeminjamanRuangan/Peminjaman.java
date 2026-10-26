@@ -10,7 +10,7 @@ public class Peminjaman {
     private Ruangan ruangan;
 
     public Peminjaman(String idPeminjaman, LocalDate tanggal,
-                      String jam, Mahasiswa mahasiswa, Ruangan ruangan) {
+        String jam, Mahasiswa mahasiswa, Ruangan ruangan) {
         this.idPeminjaman = idPeminjaman;
         this.tanggal = tanggal;
         this.jam = jam;

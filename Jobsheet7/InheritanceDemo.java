@@ -1,19 +1,19 @@
-
 package Jobsheet7;
 
 public class InheritanceDemo {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen();
 
-        dosen1.nip = "34329837";
-        dosen1.nama = "Yansy Ayuningtyas";
-        dosen1.gaji = 3000000;
-        dosen1.nidn = "1989432439";
+        System.out.println();
 
-        System.out.println(dosen1.getAllInfo());
+        Dosen dosen2 = new Dosen(
+            "12345",
+            "Reva",
+            5000000,
+            "67890"
+        );
 
-        Dosen dosen2 = new Dosen("123456789");
-
+        System.out.println("\nData Dosen 2:");
         System.out.println(dosen2.getAllInfo());
     }
 }

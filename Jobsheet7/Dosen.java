@@ -4,18 +4,17 @@ package Jobsheet7;
 public class Dosen extends Pegawai {
     public String nidn;
 
-    // Constructor tanpa parameter
     public Dosen() {
         System.out.println("Objek dari class Dosen dibuat");
     }
 
-    // Constructor dengan parameter
-    public Dosen(String nidn) {
+    public Dosen(String nip, String nama, double gaji, String nidn) {
+        super(nip, nama, gaji);
         this.nidn = nidn;
     }
 
     public String getInfo() {
-        return "NIDN : " + this.nidn + "\n";
+        return "NIDN : " + nidn + "\n";
     }
 
     public String getAllInfo() {
