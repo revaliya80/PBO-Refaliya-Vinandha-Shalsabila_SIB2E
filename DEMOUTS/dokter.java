@@ -15,7 +15,8 @@ public class dokter extends pegawai {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + "\n"
+        return 
+        super.getInfo() + "\n"
              + "Spesialis : " + spesialist;
     }
 }

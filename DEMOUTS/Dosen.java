@@ -15,7 +15,8 @@ public class Dosen extends pegawai {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + "\n"
+        return 
+        super.getInfo() + "\n"
              + "NIDN  : " + nidn;
     }
 }
