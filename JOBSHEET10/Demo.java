@@ -5,17 +5,19 @@ import java.util.ArrayList;
 public class Demo {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen("19940201", "Widia, S.kom. M.kom", "199402");
-        
-        Pegawai pegawai1 = dosen1;
+        TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A,Md", "Tenaga Administrasi");
 
-        System.out.println(pegawai1.nip);
-        System.out.println(pegawai1.nama);
-        pegawai1.displayInfo();
+        train(dosen1);
+        train(tendik1);
+    }
 
-        Dosen newDosen = (Dosen) pegawai1;
+    public static void train(Pegawai pegawai) {
+        pegawai.displayInfo();
+        System.out.println("Mengenalkan lingkungan kampus");
+        System.out.println("Menginfokan SOP/Juknis");
 
-        System.out.println(newDosen.nama);
-        System.out.println(newDosen.nidn);
-        newDosen.mengajar();
+        if (pegawai instanceof Dosen) {
+            System.out.println("Memberikan pelatihan pedagogik");
+        }
     }
 }
